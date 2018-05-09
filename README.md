@@ -14,7 +14,7 @@ Register: http://www.jordandavila.com/mynotes/register/
 
 You can register with a fake email or login using the following credentials:
 
-Email: sample@email.com 
+Email: sample@email.com  
 Password: password  
 
 
