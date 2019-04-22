@@ -8,9 +8,9 @@ MyNotes is a free online note taking platform build with Laravel.
 - More features to come (possibly).
 
 ## Demo
-Homepage: http://www.jordandavila.com/mynotes/  
-Login: http://www.jordandavila.com/mynotes/login/  
-Register: http://www.jordandavila.com/mynotes/register/
+Homepage: https://mynotes.jordandavila.com/  
+Login: https://mynotes.jordandavila.com/login/  
+Register: https://mynotes.jordandavila.com/register/
 
 You can register with a fake email or login using the following credentials:
 
