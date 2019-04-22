@@ -1,4 +1,4 @@
-# MyNotes v0.1
+# MyNotes 
 MyNotes is a free online note taking platform build with Laravel. 
 
 ## Features
