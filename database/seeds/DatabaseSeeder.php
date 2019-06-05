@@ -16,6 +16,5 @@ class DatabaseSeeder extends Seeder
         $user->each(function ($user) {
             factory(App\Note::class, rand(5, 13))->create(['user_id' => $user->id]);
         });
-
     }
 }

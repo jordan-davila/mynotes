@@ -32,7 +32,8 @@ class NoteController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -52,7 +53,8 @@ class NoteController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Note  $note
+     * @param \App\Note $note
+     *
      * @return \Illuminate\Http\Response
      */
     public function show(Note $note)
@@ -63,7 +65,8 @@ class NoteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Note  $note
+     * @param \App\Note $note
+     *
      * @return \Illuminate\Http\Response
      */
     public function edit(Note $note)
@@ -74,8 +77,9 @@ class NoteController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Note  $note
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Note                $note
+     *
      * @return \Illuminate\Http\Response
      */
     public function update(Note $note)
@@ -85,7 +89,7 @@ class NoteController extends Controller
             'color' => 'required',
         ]);
 
-        $note->body  = request('body');
+        $note->body = request('body');
         $note->color = request('color');
         $note->save();
 
@@ -95,12 +99,14 @@ class NoteController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Note  $note
+     * @param \App\Note $note
+     *
      * @return \Illuminate\Http\Response
      */
     public function destroy(Note $note)
     {
         $note->delete();
+
         return redirect()->home();
     }
 }
